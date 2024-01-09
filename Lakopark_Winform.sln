@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33927.289
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lakopark_Winform", "Lakopark_Winform\Lakopark_Winform.csproj", "{8F123518-5110-4637-8EAE-50D51F10F4C7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8F123518-5110-4637-8EAE-50D51F10F4C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F123518-5110-4637-8EAE-50D51F10F4C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F123518-5110-4637-8EAE-50D51F10F4C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F123518-5110-4637-8EAE-50D51F10F4C7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9CBE71B1-7132-4E59-82D2-79F9795B4687}
+	EndGlobalSection
+EndGlobal
