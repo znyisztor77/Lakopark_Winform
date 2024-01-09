@@ -30,5 +30,10 @@ namespace Lakopark_Winform
             Telkekszama = telkekszama;
             this.hazak = new int[utcakszama, telkekszama];
         }
+
+        internal void HazAdat(int utcaSzam, int hazSzam, int emelet)
+        {
+            this.hazak[utcaSzam - 1, hazSzam - 1] = emelet;
+        }
     }
 }

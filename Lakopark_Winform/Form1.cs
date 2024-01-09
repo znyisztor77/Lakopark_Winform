@@ -14,6 +14,7 @@ namespace Lakopark_Winform
     {
         List<Lakopark> lakoparkok = new List<Lakopark>();
         Adatbazis db = new Adatbazis();
+        int aktualisParkIndex = 0;
         public Form1()
         {
             InitializeComponent();
@@ -23,6 +24,14 @@ namespace Lakopark_Winform
         {
             //-adatok betöltése az adtbázisból
             lakoparkok = db.parkadatokBetoltese();
+            parkAdatokMegjelenitese();
+        }
+
+        private void parkAdatokMegjelenitese()
+        {
+            this.Text = $"{lakoparkok[aktualisParkIndex].Lakoparkneve} lakopark adatai.";
+
+
         }
     }
 }
