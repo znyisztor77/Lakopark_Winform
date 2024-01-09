@@ -12,9 +12,17 @@ namespace Lakopark_Winform
 {
     public partial class Form1 : Form
     {
+        List<Lakopark> lakoparkok = new List<Lakopark>();
+        Adatbazis db = new Adatbazis();
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            //-adatok betöltése az adtbázisból
+            lakoparkok = db.parkadatokBetoltese();
         }
     }
 }
