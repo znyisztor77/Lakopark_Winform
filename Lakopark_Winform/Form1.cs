@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Lakopark_Winform
 {
@@ -30,8 +31,8 @@ namespace Lakopark_Winform
         private void parkAdatokMegjelenitese()
         {
             this.Text = $"{lakoparkok[aktualisParkIndex].Lakoparkneve} lakopark adatai.";
-
-
+            pictureBox_Nevado.Image = Image.FromFile($"Kepek{Path.DirectorySeparatorChar}{lakoparkok[aktualisParkIndex].Lakoparkneve}.jpg");
+           
         }
     }
 }
