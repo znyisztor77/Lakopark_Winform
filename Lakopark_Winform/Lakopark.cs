@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.IO;
+using System.Drawing;
 namespace Lakopark_Winform
 {
     class Lakopark
@@ -21,6 +22,33 @@ namespace Lakopark_Winform
         public int Utcakszama { get => utcakszama; set => utcakszama = value; }
         public int Telkekszama { get => telkekszama; set => telkekszama = value; }
         public int[,] Hazak { get => hazak; set => hazak = value; }
+
+        public Image getNevadoKep()
+        {
+            return Image.FromFile($"Kepek{Path.DirectorySeparatorChar}{this.lakoparkneve}.jpg");
+        }
+
+        public Image getHazKep(int utca, int telek)
+        {
+            Image HazKep;
+            switch (Hazak[utca, telek])
+            {
+                case 1:
+                    HazKep = Image.FromFile($"Kepek{Path.DirectorySeparatorChar}Haz1.jpg");
+                    break;
+                case 2:
+                    HazKep = Image.FromFile($"Kepek{Path.DirectorySeparatorChar}Haz2.jpg");
+                    break;
+                case 3:
+                    HazKep = Image.FromFile($"Kepek{Path.DirectorySeparatorChar}Haz3.jpg");
+                    break;
+
+                default:
+                    HazKep = Image.FromFile($"Kepek{Path.DirectorySeparatorChar}kereszt.jpg");
+                    break;
+            }
+            return HazKep;
+        }
 
         public Lakopark(int lakoparkid, string lakoparkneve, int utcakszama, int telkekszama)
         {

@@ -32,7 +32,7 @@ namespace Lakopark_Winform
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pictureBox_Nevado = new System.Windows.Forms.PictureBox();
             this.panelEpuletek = new System.Windows.Forms.Panel();
-            this.button_balNyil = new System.Windows.Forms.Button();
+            this.button_balraNyil = new System.Windows.Forms.Button();
             this.button_jobbraNyil = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Nevado)).BeginInit();
             this.SuspendLayout();
@@ -50,18 +50,19 @@ namespace Lakopark_Winform
             // 
             this.panelEpuletek.Location = new System.Drawing.Point(201, 31);
             this.panelEpuletek.Name = "panelEpuletek";
-            this.panelEpuletek.Size = new System.Drawing.Size(200, 100);
+            this.panelEpuletek.Size = new System.Drawing.Size(486, 258);
             this.panelEpuletek.TabIndex = 1;
             // 
-            // button_balNyil
+            // button_balraNyil
             // 
-            this.button_balNyil.BackgroundImage = global::Lakopark_Winform.Properties.Resources.balnyil;
-            this.button_balNyil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button_balNyil.Location = new System.Drawing.Point(26, 353);
-            this.button_balNyil.Name = "button_balNyil";
-            this.button_balNyil.Size = new System.Drawing.Size(131, 74);
-            this.button_balNyil.TabIndex = 2;
-            this.button_balNyil.UseVisualStyleBackColor = true;
+            this.button_balraNyil.BackgroundImage = global::Lakopark_Winform.Properties.Resources.balnyil;
+            this.button_balraNyil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button_balraNyil.Location = new System.Drawing.Point(26, 353);
+            this.button_balraNyil.Name = "button_balraNyil";
+            this.button_balraNyil.Size = new System.Drawing.Size(131, 74);
+            this.button_balraNyil.TabIndex = 2;
+            this.button_balraNyil.UseVisualStyleBackColor = true;
+            this.button_balraNyil.Click += new System.EventHandler(this.button_balraNyil_Click);
             // 
             // button_jobbraNyil
             // 
@@ -72,6 +73,7 @@ namespace Lakopark_Winform
             this.button_jobbraNyil.Size = new System.Drawing.Size(131, 74);
             this.button_jobbraNyil.TabIndex = 2;
             this.button_jobbraNyil.UseVisualStyleBackColor = true;
+            this.button_jobbraNyil.Click += new System.EventHandler(this.button_jobbraNyil_Click);
             // 
             // Form1
             // 
@@ -79,7 +81,7 @@ namespace Lakopark_Winform
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button_jobbraNyil);
-            this.Controls.Add(this.button_balNyil);
+            this.Controls.Add(this.button_balraNyil);
             this.Controls.Add(this.panelEpuletek);
             this.Controls.Add(this.pictureBox_Nevado);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -95,7 +97,7 @@ namespace Lakopark_Winform
 
         private System.Windows.Forms.PictureBox pictureBox_Nevado;
         private System.Windows.Forms.Panel panelEpuletek;
-        private System.Windows.Forms.Button button_balNyil;
+        private System.Windows.Forms.Button button_balraNyil;
         private System.Windows.Forms.Button button_jobbraNyil;
     }
 }
