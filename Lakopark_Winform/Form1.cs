@@ -78,7 +78,7 @@ namespace Lakopark_Winform
             string[] parameterek = pb.Tag.ToString().Split(';');
             int utca = int.Parse(parameterek[0]);
             int hazszam = int.Parse(parameterek[1]);
-            //MessageBox.Show($"utca: {utca+1}, ház: {hazszam+1}");
+            MessageBox.Show($"utca: {utca+1}, ház: {hazszam+1}");
             lakoparkok[aktualisParkIndex].Hazak[utca, hazszam]++;
 
             if (lakoparkok[aktualisParkIndex].Hazak[utca, hazszam]> 3) // szinteket nézümk
